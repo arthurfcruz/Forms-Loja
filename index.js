@@ -1,6 +1,6 @@
 const nomeLoja = document.getElementById('nome')
 nomeLoja.addEventListener("change", (event) =>{
-    console.log(event.target.value)
+    window.localStorage.setItem('nome', event.target.value)
 })
 nomeLoja.addEventListener('focus', (event) => {
     event.target.style.outlineColor = 'purple'
@@ -8,7 +8,7 @@ nomeLoja.addEventListener('focus', (event) => {
 
 const enderecoLoja = document.getElementById('endereco')
 enderecoLoja.addEventListener("change", (event) =>{
-    console.log(event.target.value)
+    window.localStorage.setItem('endereco', event.target.value)
 })
 enderecoLoja.addEventListener('focus', (event) => {
     event.target.style.outlineColor = 'purple'
@@ -16,7 +16,7 @@ enderecoLoja.addEventListener('focus', (event) => {
 
 const diaLoja = document.getElementById('dia')
 diaLoja.addEventListener("change", (event) =>{
-    console.log("segunda")
+    window.localStorage.setItem('dia', "segunda")
 })
 diaLoja.addEventListener('focus', (event) => {
     event.target.style.outlineColor = 'purple'
@@ -24,7 +24,7 @@ diaLoja.addEventListener('focus', (event) => {
 
 const dia1Loja = document.getElementById('dia1')
 dia1Loja.addEventListener("change", (event) =>{
-    console.log("terca")
+    window.localStorage.setItem('dia1', "terca")
 })
 dia1Loja.addEventListener('focus', (event) => {
     event.target.style.outlineColor = 'purple'
@@ -32,7 +32,7 @@ dia1Loja.addEventListener('focus', (event) => {
 
 const dia2Loja = document.getElementById('dia2')
 dia2Loja.addEventListener("change", (event) =>{
-    console.log("quarta")
+    window.localStorage.setItem('dia2', "quarta")
 })
 dia2Loja.addEventListener('focus', (event) => {
     event.target.style.outlineColor = 'purple'
@@ -40,7 +40,7 @@ dia2Loja.addEventListener('focus', (event) => {
 
 const dia3Loja = document.getElementById('dia3')
 dia3Loja.addEventListener("change", (event) =>{
-    console.log("quinta")
+    window.localStorage.setItem('dia3', "quinta")
 })
 dia3Loja.addEventListener('focus', (event) => {
     event.target.style.outlineColor = 'purple'
@@ -48,7 +48,7 @@ dia3Loja.addEventListener('focus', (event) => {
 
 const dia4Loja = document.getElementById('dia4')
 dia4Loja.addEventListener("change", (event) =>{
-    console.log("sexta")
+    window.localStorage.setItem('dia4', "sexta")
 })
 dia4Loja.addEventListener('focus', (event) => {
     event.target.style.outlineColor = 'purple'
@@ -56,7 +56,7 @@ dia4Loja.addEventListener('focus', (event) => {
 
 const dia5Loja = document.getElementById('dia5')
 dia5Loja.addEventListener("change", (event) =>{
-    console.log("sabado")
+    window.localStorage.setItem("dia5", "sabado")
 })
 dia5Loja.addEventListener('focus', (event) => {
     event.target.style.outlineColor = 'purple'
@@ -64,7 +64,7 @@ dia5Loja.addEventListener('focus', (event) => {
 
 const dia6Loja = document.getElementById('dia6')
 dia6Loja.addEventListener("change", (event) =>{
-    console.log("domingo")
+    window.localStorage.setItem('dia6', "domingo")
 })
 dia6Loja.addEventListener('focus', (event) => {
     event.target.style.outlineColor = 'purple'
@@ -72,7 +72,7 @@ dia6Loja.addEventListener('focus', (event) => {
 
 const abrirLoja = document.getElementById('abrir')
 abrirLoja.addEventListener("change", (event) =>{
-    console.log(event.target.value)
+    window.localStorage.setItem('abrir', event.target.value)
 })
 abrirLoja.addEventListener('focus', (event) => {
     event.target.style.outlineColor = 'purple'
@@ -80,7 +80,7 @@ abrirLoja.addEventListener('focus', (event) => {
 
 const fecharLoja = document.getElementById('fechar')
 fecharLoja.addEventListener("change", (event) =>{
-    console.log(event.target.value)
+    window.localStorage.setItem('fechar', event.target.value)
 })
 fecharLoja.addEventListener('focus', (event) => {
     event.target.style.outlineColor = 'purple'
@@ -95,6 +95,6 @@ submitForm.addEventListener('focus', (event) => {
 const formulario = document.getElementById('formulario')
 
 formulario.addEventListener("submit", (event) =>{
-    console.log("preparando envio...")
+    window.localStorage.setItem('formulario',"preparando envio...")
     event.preventDefault()
 })
