@@ -7,39 +7,92 @@
     <link rel="stylesheet" href="style.css">
     <title>Cadastro de Loja</title>
 </head>
+<style>
+    html {
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ol,
+    ul {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
 <body>
     <section class="content">
         <form id="formulario" action="api.flit.com.br/submeterDados" method="get">
-        <div class ="form">
-            <label for="nome">Nome:</label><br>
-            <input class="input" id="nome" type="text" placeholder="Americanas">
-        </div>
-        <div class="form">
-            <label for="endereco">Endereço:</label><br>
-            <input class="input" type="text" id="endereco" placeholder="Ex: Av. Brasil, 3171">
-        </div>
-        <div class ="form">
-            <label for="">Dias da semana em que há funcionamento:</label><br>
-            <input id="dia" type="checkbox">Segunda<br>
-            <input id="dia1" type="checkbox">Terça<br>
-            <input id="dia2" type="checkbox">Quarta<br>
-            <input id="dia3" type="checkbox">Quinta<br>
-            <input id="dia4" type="checkbox">Sexta<br>
-            <input id="dia5" type="checkbox">Sábado<br>
-            <input id="dia6" type="checkbox">Domingo<br>
-        </div>
-        <div class ="form">
-            <label for="funcionamento">Horário de abertura:</label><br>
-            <input class="input" type="time" id="abrir">
-        </div>
-        <div class ="form">
-            <label for="funcionamento">Horário de fechamento:</label><br>
-            <input class="input" type="time" id="fechar">
-        </div>
-        <div class ="form">
-            <button type="submit" id="submit">Enviar</button>
-        </div>
-    </form>
+            <div class ="form">
+                <label for="nome">Nome:</label><br>
+                <input class="input" id="nome" type="text" placeholder="Americanas">
+            </div>
+            <div class="form">
+                <label for="endereco">Endereço:</label><br>
+                <input class="input" type="text" id="endereco" placeholder="Ex: Av. Brasil, 3171">
+            </div>
+            <div>
+                <label for="">Dias da semana em que há funcionamento:</label><br>
+            </div>
+            <div class ="form dias">
+                <div>
+                    <input id="dia" type="checkbox">Segunda<br>
+                </div>
+                <div>
+                    <input id="dia1" type="checkbox">Terça<br>
+                </div>
+                <div>
+                    <input id="dia2" type="checkbox">Quarta<br>
+                </div>
+                <div>
+                    <input id="dia3" type="checkbox">Quinta<br>
+                </div>
+                <div>
+                    <input id="dia4" type="checkbox">Sexta<br>
+                </div>
+                <div>
+                    <input id="dia5" type="checkbox">Sábado<br>
+                </div>
+                <div>
+                    <input id="dia6" type="checkbox">Domingo<br>
+                </div>  
+            </div>
+            <div class ="form">
+                <label for="funcionamento">Horário de abertura:</label><br>
+                <input class="input" type="time" id="abrir">
+            </div>
+            <div class ="form">
+                <label for="funcionamento">Horário de fechamento:</label><br>
+                <input class="input" type="time" id="fechar">
+            </div>
+            <div class ="form">
+                <button type="submit" id="submit">Enviar</button>
+            </div>
+        </form>
     </section>
 </body>
 </html>
