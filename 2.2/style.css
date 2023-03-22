@@ -1,0 +1,41 @@
+.header{
+    height: 14vh;
+    background-color: #042940;
+}
+
+.img{
+    float: left;
+    margin-left: 15px;
+    height: 95%;
+}
+
+.content{
+    background-color: #EEEEEE;
+    height: 86vh;
+    text-align: center;
+    justify-content: center;
+}
+
+.estrelas{
+    display: grid;
+    grid-template-columns: 5% 5% 5% 5% 5%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.input{
+    height: 30px;
+    width: 250px;
+}
+
+.form{
+    margin-bottom: 50px;
+}
+
+.enviar{
+    background-color: #042940;
+    color: white;
+    width: 300px;
+    height: 50px;
+    margin-top: 350px;
+}
