@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avaliacao da Loja</title>
+</head>
+<style>
+    html {
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ol,
+    ul {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+<body>
+    <div class="header">
+        <img class="img" src="./img/logo_semsite_semfundo.png" alt="">
+    </div>
+    <div class="content">
+        <div class="form">
+            <label for="email"><h3>Qual o seu email?</h3></label><br>
+            <input class="input" type="text" id="email" >
+        </div>
+        <div class="form">
+           <h3>Em uma escala de 1 a 10, qual a probabilidade de voce<br>
+            recomendar nosso curso para um amigo ou conhecido?<br></h3> 
+            <div class="recomenda">
+                <label for="1">1</label>
+                <input id="um" class="rating1" type="radio">
+                
+                <label for="2">2</label>
+                <input id="dois" class="rating1" type="radio">
+                
+                <label for="3">3</label>
+                <input id="tres" class="rating1" type="radio">
+                
+                <label for="4">4</label>
+                <input id="quatro" class="rating1" type="radio">
+                
+                <label for="5">5</label>
+                <input id="cinco" class="rating1" type="radio">
+                
+                <label for="6">6</label>
+                <input id="seis" class="rating1" type="radio">
+                
+                <label for="7">7</label>
+                <input id="sete" class="rating1" type="radio">
+                
+                <label for="8">8</label>
+                <input id="oito" class="rating1" type="radio">
+                
+                <label for="9">9</label>
+                <input id="nove" class="rating1" type="radio">
+                
+                <label for="10">10</label>
+                <input id="dez" class="rating1" type="radio">    
+            </div>        
+        </div>
+        <div class="form avaliacao2">
+            <h3>Em relacao a nossa monitoria ao vivo, como voce classificaria?<br></h3>
+            <div class="estrelas">
+                <div>
+                    <span class="stars"><img id="eum" src="./img/estrelavazada.png" alt="estrela" width="25px"></span>
+                </div>
+                <div>
+                    <span class="stars"><img id="edois" src="./img/estrelavazada.png" alt="estrela" width="25px"></span>
+                </div>
+                <div>
+                    <span class="stars"><img id="etres" src="./img/estrelavazada.png" alt="estrela" width="25px"></span>
+                </div>
+                <div>
+                    <span class="stars"><img id="equatro" src="./img/estrelavazada.png" alt="estrela" width="25px"></span>
+                </div>
+                <div>
+                    <span class="stars"><img id="ecinco" src="./img/estrelavazada.png" alt="estrela" width="25px"></span>
+                </div>
+            </div>
+        </div>
+        <div class="botao">
+            <button class="enviar" type="submit">Enviar resposta</button>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+<script src="index.js"></script>
+</html>
