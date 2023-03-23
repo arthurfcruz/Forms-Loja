@@ -1,0 +1,21 @@
+.content{
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #EEEEEE;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.form{
+    width: 250px;
+}
+
+.dias{
+    display: flex;
+    margin-right: 50px;
+}

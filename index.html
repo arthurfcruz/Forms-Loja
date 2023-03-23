@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Loja</title>
+</head>
+<style>
+    html {
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ol,
+    ul {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+<body>
+    <section class="content">
+        <form id="formulario" action="api.flit.com.br/submeterDados" method="get">
+            <div class ="form">
+                <label for="nome">Nome:</label>
+                <input class="input" id="nome" type="text" placeholder="Americanas">
+            </div>
+            <div class="form">
+                <label for="endereco">Endereço:</label>
+                <input class="input" type="text" id="endereco" placeholder="Ex: Av. Brasil, 3171">
+            </div>
+            <div>
+                <label for="">Dias da semana em que há funcionamento:</label>
+            </div>
+            <div id="semana" class ="form dias">
+                <div class ="form">
+                    <input id="dia" type="checkbox">Segunda
+                </div>
+                <div class ="form">
+                    <input id="dia1" type="checkbox">Terça
+                </div>
+                <div class ="form">
+                    <input id="dia2" type="checkbox">Quarta
+                </div>
+                <div class ="form">
+                    <input id="dia3" type="checkbox">Quinta
+                </div>
+                <div class ="form">
+                    <input id="dia4" type="checkbox">Sexta
+                </div>
+                <div class ="form">
+                    <input id="dia5" type="checkbox">Sábado
+                </div>
+                <div class ="form">
+                    <input id="dia6" type="checkbox">Domingo
+                </div>  
+            </div>
+            <div class ="form">
+                <label for="funcionamento">Horário de abertura:</label>
+                <input class="input" type="time" id="abrir">
+            </div>
+            <div class ="form">
+                <label for="funcionamento">Horário de fechamento:</label>
+                <input class="input" type="time" id="fechar">
+            </div>
+            <div class ="form">
+                <button type="submit" id="submit">Enviar</button>
+            </div>
+            <div class ="form">
+                <button onclick="myFunction()" type="button" id="redimensionar">Alinhar</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
+</body>
+<script src="index.js"></script>
+</html>
