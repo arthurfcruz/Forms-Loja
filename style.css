@@ -19,3 +19,33 @@
     display: flex;
     margin-right: 50px;
 }
+
+#area1{
+    grid-column: 1/2;
+    grid-row: 1/1;
+}
+
+#area2{
+    grid-column: 3/3;
+    grid-row: 1/2;
+}
+
+#area3{
+    grid-column: 1/2;
+    grid-row: 3/3;
+}
+
+#area4{
+    grid-column: 1/1;
+    grid-row: 2/2;
+}
+
+#area5{
+   grid-column: 2/2;
+   grid-row: 2/2;
+}
+
+#button{
+    grid-column: 3/3;
+    grid-row: 3/3;
+}

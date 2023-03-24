@@ -62,7 +62,14 @@ formulario.addEventListener("submit", (event) =>{
     event.preventDefault()
 })
 
-function myFunction() {
-    document.getElementById("formulario").style.flexDirection = "column";
+function flex() {
+    formulario.style.display = "flex";
     document.getElementById("semana").style.flexDirection = "column";
+    formulario.style.flexDirection = "column";
+}
+
+function grid() {
+    formulario.style.display = "grid";
+    formulario.style.gridTemplateColumns = 'auto auto auto';
+    formulario.style.gridTemplateRows = 'auto auto auto'
 }

@@ -47,53 +47,60 @@
 <body>
     <section class="content">
         <form id="formulario" action="api.flit.com.br/submeterDados" method="get">
-            <div class ="form">
+            <div id="area1" class ="form">
                 <label for="nome">Nome:</label>
                 <input class="input" id="nome" type="text" placeholder="Americanas">
             </div>
-            <div class="form">
+            <div id="area2" class="form">
                 <label for="endereco">Endereço:</label>
                 <input class="input" type="text" id="endereco" placeholder="Ex: Av. Brasil, 3171">
             </div>
-            <div>
-                <label for="">Dias da semana em que há funcionamento:</label>
+            <div id="area3">
+                <div>
+                    <label for="">Dias da semana em que há funcionamento:</label>
+                </div>
+                <div id="semana" class ="form dias">
+                    <div class ="form">
+                        <input id="dia" type="checkbox">Segunda
+                    </div>
+                    <div class ="form">
+                        <input id="dia1" type="checkbox">Terça
+                    </div>
+                    <div class ="form">
+                        <input id="dia2" type="checkbox">Quarta
+                    </div>
+                    <div class ="form">
+                        <input id="dia3" type="checkbox">Quinta
+                    </div>
+                    <div class ="form">
+                        <input id="dia4" type="checkbox">Sexta
+                    </div>
+                    <div class ="form">
+                        <input id="dia5" type="checkbox">Sábado
+                    </div>
+                    <div class ="form">
+                        <input id="dia6" type="checkbox">Domingo
+                    </div>  
+                </div>
             </div>
-            <div id="semana" class ="form dias">
-                <div class ="form">
-                    <input id="dia" type="checkbox">Segunda
-                </div>
-                <div class ="form">
-                    <input id="dia1" type="checkbox">Terça
-                </div>
-                <div class ="form">
-                    <input id="dia2" type="checkbox">Quarta
-                </div>
-                <div class ="form">
-                    <input id="dia3" type="checkbox">Quinta
-                </div>
-                <div class ="form">
-                    <input id="dia4" type="checkbox">Sexta
-                </div>
-                <div class ="form">
-                    <input id="dia5" type="checkbox">Sábado
-                </div>
-                <div class ="form">
-                    <input id="dia6" type="checkbox">Domingo
-                </div>  
-            </div>
-            <div class ="form">
+            <div id="area4" class ="form">
                 <label for="funcionamento">Horário de abertura:</label>
                 <input class="input" type="time" id="abrir">
             </div>
-            <div class ="form">
+            <div id="area5" class ="form">
                 <label for="funcionamento">Horário de fechamento:</label>
                 <input class="input" type="time" id="fechar">
             </div>
-            <div class ="form">
-                <button type="submit" id="submit">Enviar</button>
-            </div>
-            <div class ="form">
-                <button onclick="myFunction()" type="button" id="redimensionar">Alinhar</button>
+            <div id="button">
+                <div class ="form">
+                    <button type="submit" id="submit">Enviar</button>
+                </div>
+                <div class ="form">
+                    <button onclick="flex()" type="button" id="redimensionar">Redimensionar</button>
+                </div>
+                <div class ="form">
+                    <button onclick="grid()" type="button" id="alinhar">Alinhar</button>
+                </div>
             </div>
         </form>
     </section>
